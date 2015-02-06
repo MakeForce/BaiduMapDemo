@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mDk-Xk-cRf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--tableview控制器-->
+        <scene sceneID="Tp0-8a-l02">
+            <objects>
+                <tableViewController storyboardIdentifier="MainTableView" title="百度地图Demo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Rb-EB-k9B" userLabel="tableview控制器" customClass="MainTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sU8-BU-c35">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" hidden="YES" contentMode="scaleToFill" id="SF5-2J-whz">
+                            <rect key="frame" x="0.0" y="130" width="600" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84600207270000005" green="0.84600207270000005" blue="0.84600207270000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainCell" textLabel="JgW-Eo-Zhr" style="IBUITableViewCellStyleDefault" id="hXA-Tk-7Yz">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hXA-Tk-7Yz" id="CYZ-iT-Htd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JgW-Eo-Zhr">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Rb-EB-k9B" id="jzj-s8-Wwa"/>
+                            <outlet property="delegate" destination="9Rb-EB-k9B" id="SK9-4d-wmn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="百度地图Demo" id="Bi9-Yt-Ciy"/>
+                    <connections>
+                        <outlet property="line" destination="SF5-2J-whz" id="bt7-B2-Lp0"/>
+                        <segue destination="mgL-Xk-vuX" kind="show" identifier="BaseMap" id="Fhy-RN-jVd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWC-RA-coR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="531"/>
+        </scene>
+        <!--基本地图-->
+        <scene sceneID="aru-Ni-KS9">
+            <objects>
+                <viewController storyboardIdentifier="BasicMap" title="基本使用" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mgL-Xk-vuX" userLabel="基本地图" customClass="BasicMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dQ-Ao-XE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="qBH-Y1-4hg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rgr-SA-zMT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tqk-nm-dEO">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="mgL-Xk-vuX" eventType="valueChanged" id="T39-LJ-hjX"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指定位置:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx5-QD-U0b">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i2e-bM-epJ">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="mgL-Xk-vuX" eventType="valueChanged" id="Egf-DP-57c"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实时路况：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-VN-pIK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图类型：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynw-mc-Fkq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟多功能请按需增添" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="87" translatesAutoresizingMaskIntoConstraints="NO" id="ZHe-EN-iIO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.87843137250000003" green="0.30980392159999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-jx-iw0">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="mgL-Xk-vuX" eventType="valueChanged" id="B2L-i3-dZ1"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZHe-EN-iIO" firstAttribute="top" secondItem="6dQ-Ao-XE6" secondAttribute="bottom" constant="8" id="0aX-pP-yhq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="ZHe-EN-iIO" firstAttribute="leading" secondItem="Bpm-VN-pIK" secondAttribute="trailing" constant="8" id="53m-dj-76p">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="Sx5-QD-U0b" firstAttribute="top" secondItem="6dQ-Ao-XE6" secondAttribute="bottom" constant="5" id="9zE-EQ-h75"/>
+                            <constraint firstItem="ynw-mc-Fkq" firstAttribute="top" secondItem="6dQ-Ao-XE6" secondAttribute="bottom" constant="5" id="IQH-Da-zOG"/>
+                            <constraint firstItem="Bpm-VN-pIK" firstAttribute="top" secondItem="6dQ-Ao-XE6" secondAttribute="bottom" constant="8" id="Icv-Sc-miE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="ynw-mc-Fkq" firstAttribute="leading" secondItem="rgr-SA-zMT" secondAttribute="leading" id="TGU-AT-qfE"/>
+                            <constraint firstItem="Bpm-VN-pIK" firstAttribute="centerX" secondItem="ubu-jx-iw0" secondAttribute="centerX" constant="10" id="Y8e-za-ghs"/>
+                            <constraint firstItem="Bpm-VN-pIK" firstAttribute="leading" secondItem="Sx5-QD-U0b" secondAttribute="trailing" constant="13" id="Yje-Qn-ngy">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Sx5-QD-U0b" firstAttribute="leading" secondItem="ynw-mc-Fkq" secondAttribute="trailing" constant="2" id="iP5-VA-Uwz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Tqk-nm-dEO" firstAttribute="top" secondItem="ynw-mc-Fkq" secondAttribute="bottom" constant="3" id="iPc-lg-Vyc"/>
+                            <constraint firstItem="ynw-mc-Fkq" firstAttribute="centerX" secondItem="Tqk-nm-dEO" secondAttribute="centerX" constant="7" id="k3A-NS-bQg"/>
+                            <constraint firstItem="ubu-jx-iw0" firstAttribute="top" secondItem="Bpm-VN-pIK" secondAttribute="bottom" constant="3" id="sg0-Uh-vuB"/>
+                            <constraint firstItem="i2e-bM-epJ" firstAttribute="centerX" secondItem="Sx5-QD-U0b" secondAttribute="centerX" constant="-10" id="zNb-wl-Iv9"/>
+                            <constraint firstItem="i2e-bM-epJ" firstAttribute="top" secondItem="Sx5-QD-U0b" secondAttribute="bottom" constant="3" id="za3-Kb-B1P"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Tqk-nm-dEO"/>
+                                <exclude reference="Sx5-QD-U0b"/>
+                                <exclude reference="i2e-bM-epJ"/>
+                                <exclude reference="Bpm-VN-pIK"/>
+                                <exclude reference="ynw-mc-Fkq"/>
+                                <exclude reference="ZHe-EN-iIO"/>
+                                <exclude reference="ubu-jx-iw0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Icv-Sc-miE"/>
+                                <exclude reference="Y8e-za-ghs"/>
+                                <exclude reference="Yje-Qn-ngy"/>
+                                <exclude reference="9zE-EQ-h75"/>
+                                <exclude reference="iP5-VA-Uwz"/>
+                                <exclude reference="0aX-pP-yhq"/>
+                                <exclude reference="53m-dj-76p"/>
+                                <exclude reference="IQH-Da-zOG"/>
+                                <exclude reference="TGU-AT-qfE"/>
+                                <exclude reference="k3A-NS-bQg"/>
+                                <exclude reference="iPc-lg-Vyc"/>
+                                <exclude reference="zNb-wl-Iv9"/>
+                                <exclude reference="za3-Kb-B1P"/>
+                                <exclude reference="sg0-Uh-vuB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Tqk-nm-dEO"/>
+                                <include reference="Sx5-QD-U0b"/>
+                                <include reference="i2e-bM-epJ"/>
+                                <include reference="Bpm-VN-pIK"/>
+                                <include reference="ynw-mc-Fkq"/>
+                                <include reference="ZHe-EN-iIO"/>
+                                <include reference="ubu-jx-iw0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Icv-Sc-miE"/>
+                                <include reference="Y8e-za-ghs"/>
+                                <include reference="Yje-Qn-ngy"/>
+                                <include reference="9zE-EQ-h75"/>
+                                <include reference="iP5-VA-Uwz"/>
+                                <include reference="0aX-pP-yhq"/>
+                                <include reference="53m-dj-76p"/>
+                                <include reference="IQH-Da-zOG"/>
+                                <include reference="TGU-AT-qfE"/>
+                                <include reference="k3A-NS-bQg"/>
+                                <include reference="iPc-lg-Vyc"/>
+                                <include reference="zNb-wl-Iv9"/>
+                                <include reference="za3-Kb-B1P"/>
+                                <include reference="sg0-Uh-vuB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDk-2y-RJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.5" y="-134.25"/>
+        </scene>
+        <!--导航控制器-->
+        <scene sceneID="hUe-93-7xA">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mDk-Xk-cRf" userLabel="导航控制器" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pvf-mE-FyD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Rb-EB-k9B" kind="relationship" relationship="rootViewController" id="hPh-M5-XTm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxs-4L-b0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="531"/>
+        </scene>
+    </scenes>
+</document>
