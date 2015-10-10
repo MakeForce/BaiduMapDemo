@@ -6,8 +6,6 @@
 //  Copyright (c) 2015年 OliverTheFerry. All rights reserved.
 //
 
-#import "BMKShape.h"
-
 @interface KHPointAnnotation : BMKShape{
     @package
     CLLocationCoordinate2D _coordinate;
