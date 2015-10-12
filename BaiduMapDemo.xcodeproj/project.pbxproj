@@ -34,6 +34,9 @@
 		3D8151EB1A845BA1006B856B /* KHPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8151EA1A845BA1006B856B /* KHPointAnnotation.m */; };
 		3D8151EE1A84681A006B856B /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8151EC1A84681A006B856B /* add@3x.png */; };
 		3D8151EF1A84681A006B856B /* sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8151ED1A84681A006B856B /* sub@3x.png */; };
+		6256B92F1BCB9B400085331A /* DualmapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B92E1BCB9B400085331A /* DualmapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6256B9321BCBA2020085331A /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B9311BCBA2020085331A /* MapDemoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6256B9351BCBAB2C0085331A /* MapControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B9341BCBAB2C0085331A /* MapControlViewController.m */; settings = {ASSET_TAGS = (); }; };
 		62F1E1281BC8FE5000B59466 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F1E1271BC8FE5000B59466 /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
 		62F1E12A1BC8FE9F00B59466 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62F1E1291BC8FE9F00B59466 /* mapapi.bundle */; };
 /* End PBXBuildFile section */
@@ -88,6 +91,12 @@
 		3D8151EA1A845BA1006B856B /* KHPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPointAnnotation.m; sourceTree = "<group>"; };
 		3D8151EC1A84681A006B856B /* add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@3x.png"; sourceTree = "<group>"; };
 		3D8151ED1A84681A006B856B /* sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sub@3x.png"; sourceTree = "<group>"; };
+		6256B92D1BCB9B400085331A /* DualmapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DualmapViewController.h; sourceTree = "<group>"; };
+		6256B92E1BCB9B400085331A /* DualmapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DualmapViewController.m; sourceTree = "<group>"; };
+		6256B9301BCBA2020085331A /* MapDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDemoViewController.h; sourceTree = "<group>"; };
+		6256B9311BCBA2020085331A /* MapDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDemoViewController.m; sourceTree = "<group>"; };
+		6256B9331BCBAB2C0085331A /* MapControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapControlViewController.h; sourceTree = "<group>"; };
+		6256B9341BCBAB2C0085331A /* MapControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapControlViewController.m; sourceTree = "<group>"; };
 		62F1E1271BC8FE5000B59466 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = Resource/Lib/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		62F1E1291BC8FE9F00B59466 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../Lib/BaiduMapAPI.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +269,8 @@
 		3D8151791A845744006B856B /* 2 */ = {
 			isa = PBXGroup;
 			children = (
+				6256B92D1BCB9B400085331A /* DualmapViewController.h */,
+				6256B92E1BCB9B400085331A /* DualmapViewController.m */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -267,6 +278,8 @@
 		3D81517A1A845744006B856B /* 3 */ = {
 			isa = PBXGroup;
 			children = (
+				6256B9301BCBA2020085331A /* MapDemoViewController.h */,
+				6256B9311BCBA2020085331A /* MapDemoViewController.m */,
 			);
 			path = 3;
 			sourceTree = "<group>";
@@ -274,6 +287,8 @@
 		3D81517B1A845744006B856B /* 4 */ = {
 			isa = PBXGroup;
 			children = (
+				6256B9331BCBAB2C0085331A /* MapControlViewController.h */,
+				6256B9341BCBAB2C0085331A /* MapControlViewController.m */,
 			);
 			path = 4;
 			sourceTree = "<group>";
@@ -435,11 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6256B9321BCBA2020085331A /* MapDemoViewController.m in Sources */,
 				3D8151E11A8459D7006B856B /* MainTableViewController.m in Sources */,
 				3D8151E81A845B7F006B856B /* KHPaoPaoView.m in Sources */,
+				6256B9351BCBAB2C0085331A /* MapControlViewController.m in Sources */,
 				3D81514C1A84566F006B856B /* ViewController.mm in Sources */,
 				3D8151491A84566F006B856B /* AppDelegate.m in Sources */,
 				3D8151E41A845B4F006B856B /* BasicMapViewController.m in Sources */,
+				6256B92F1BCB9B400085331A /* DualmapViewController.m in Sources */,
 				3D8151461A84566F006B856B /* main.m in Sources */,
 				3D8151EB1A845BA1006B856B /* KHPointAnnotation.m in Sources */,
 			);

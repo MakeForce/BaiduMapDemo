@@ -19,6 +19,10 @@
  *  系统版本号
  */
 #define __IPHONE_OS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+/*!
+ *  先的坐标
+ */
+#define xian            CLLocationCoordinate2DMake(34.2239390000,108.9807190000);//数据来源http://www.gpsspg.com/maps.htm
 
 #ifdef DEBUG
 #define KHLog(...) NSLog(__VA_ARGS__)
