@@ -22,7 +22,8 @@
 /*!
  *  先的坐标
  */
-#define xian            CLLocationCoordinate2DMake(34.2239390000,108.9807190000);//数据来源http://www.gpsspg.com/maps.htm
+#define xian            CLLocationCoordinate2DMake(34.2239390000,108.9807190000)//数据来源http://www.gpsspg.com/maps.htm
+#define changQY         CLLocationCoordinate2DMake(39.9183390000,116.4026860000)//39.9183390000,116.4026860000
 
 #ifdef DEBUG
 #define KHLog(...) NSLog(__VA_ARGS__)

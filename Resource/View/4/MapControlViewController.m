@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *add;
 @property (weak, nonatomic) IBOutlet UIButton *sub;
 @property (assign , nonatomic) NSInteger zoomL;
+@property (weak, nonatomic) IBOutlet UIView *hiddenView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation MapControlViewController
@@ -26,6 +28,9 @@
     // Do any additional setup after loading the view.
     _map.zoomLevel = 14;
     _zoomL = 14;
+    UIBarButtonItem * customRightBar = [[UIBarButtonItem alloc] initWithTitle:@"截图" style:UIBarButtonItemStyleBordered target:self action:@selector(screensHot)];
+    customRightBar.title = @"截图";
+    self.navigationItem.rightBarButtonItem = customRightBar;
 }
 -(void)viewWillAppear:(BOOL)animated{
     [_map viewWillAppear];
@@ -34,6 +39,14 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [_map viewWillDisappear];
     _map.delegate = nil;
+}
+//截取当前地图可视区域
+-(void)screensHot{
+    [_hiddenView setHidden:NO];
+    [self.view bringSubviewToFront:_hiddenView];
+    _imageView.image = [_map takeSnapshot];//可视区域
+//    _map takeSnapshot:<#(CGRect)#>  获得地图指定区域截图
+    [self.navigationItem.rightBarButtonItem setEnabled:NO];
 }
 -(IBAction)valueChange:(UIButton *)sender{
     switch (sender.tag) {
@@ -55,6 +68,7 @@
             break;
     }
 }
+//地图缩放操作
 -(IBAction)zoomLevelAction:(UIButton *)sender{
     switch (sender.tag) {
         case 0:{//++
@@ -87,6 +101,13 @@
             break;
     }
     _zoomlevel.text = [@(_zoomL) stringValue];
+}
+//关闭截图展示
+- (IBAction)closeScreenHot:(UIButton *)sender {
+    [_hiddenView setHidden:YES];
+    [self.view sendSubviewToBack:_hiddenView];
+    _imageView.image = nil;
+    [self.navigationItem.rightBarButtonItem setEnabled:YES];
 }
 #pragma mark 底图手势操作
 /**
@@ -148,24 +169,6 @@
     
     _info.text = showmeg;
     [self updateZoomle];
-}
-//截图
--(void)snapshot
-{
-//    _hiddenView.hidden = false;
-//    [self.view bringSubviewToFront:_hiddenView];
-//    //获得地图当前可视区域截图
-//    _imgView.image = [_mapView takeSnapshot];
-//    if([self isIphone5])
-//    {
-//        _closeButton.frame=CGRectMake(115, 420, _closeButton.frame.size.width, _closeButton.frame.size.height);
-//    }
-//    else
-//    {
-//        _closeButton.frame=CGRectMake(115, 340, _closeButton.frame.size.width, _closeButton.frame.size.height);
-//    }
-//    [_hiddenView bringSubviewToFront:_closeButton];
-//    self.navigationItem.rightBarButtonItem.enabled = false;
 }
 -(void)updateZoomle{
     _zoomL = _map.zoomLevel;

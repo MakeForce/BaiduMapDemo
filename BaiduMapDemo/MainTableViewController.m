@@ -26,8 +26,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController"];
-    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control"];
+    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController",@"UI操作 MapViewUIOperatViewController",@"定位 LocationViewController",@"覆盖物 CoverMapViewController"];
+    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control",@"uiControl",@"getLocation",@"mapCover"];
     [line setFrame:CGRectMake(0, 0, __SCREEN_SIZE.width, 0.5)];
     if(nameList.count > 0)
     {
