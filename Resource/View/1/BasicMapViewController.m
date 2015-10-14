@@ -176,6 +176,7 @@
         BMKPinAnnotationView *newAnnotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"myAnnotation"];
         newAnnotationView.image = [UIImage imageWithContentsOfFile:[_bundle pathForResource:@"local@2x" ofType:@"png"]];
         newAnnotationView.animatesDrop = YES;// 设置该标注点动画显示
+        newAnnotationView.draggable = YES;//移动
         KHPaoPaoView *paopao = [[KHPaoPaoView alloc] init];
         [paopao setAnnotationWith:((KHPointAnnotation *)annotation)];
         newAnnotationView.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:paopao];

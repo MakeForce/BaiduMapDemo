@@ -7,7 +7,7 @@
 //
 
 #import "MainTableViewController.h"
-
+#import "PoiSearchViewController.h"
 @interface MainTableViewController ()
 {
     NSArray *nameList;
@@ -26,8 +26,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController",@"UI操作 MapViewUIOperatViewController",@"定位 LocationViewController",@"覆盖物 CoverMapViewController"];
-    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control",@"uiControl",@"getLocation",@"mapCover"];
+    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController",@"UI操作 MapViewUIOperatViewController",@"定位 LocationViewController",@"覆盖物 CoverMapViewController" ,@"自定义覆盖 CustomOverlayViewController",@"POI搜索 PoiSearchViewController"];
+    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control",@"uiControl",@"getLocation",@"mapCover",@"customOverlay",@"PoiSearchViewController"];
     [line setFrame:CGRectMake(0, 0, __SCREEN_SIZE.width, 0.5)];
     if(nameList.count > 0)
     {
@@ -65,7 +65,15 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:[controllerList objectAtIndex:indexPath.row] sender:nil];
+    if (indexPath.row<8) {
+        [self performSegueWithIdentifier:controllerList[indexPath.row] sender:nil];
+    }
+    else{
+        Class className = NSClassFromString(controllerList[indexPath.row]);
+        id controller = [[className alloc] init];
+        [controller setTitle:nameList[indexPath.row]];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 /*
 // Override to support conditional editing of the table view.

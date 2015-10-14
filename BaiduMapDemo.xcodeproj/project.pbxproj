@@ -34,9 +34,16 @@
 		3D8151EB1A845BA1006B856B /* KHPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8151EA1A845BA1006B856B /* KHPointAnnotation.m */; };
 		3D8151EE1A84681A006B856B /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8151EC1A84681A006B856B /* add@3x.png */; };
 		3D8151EF1A84681A006B856B /* sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8151ED1A84681A006B856B /* sub@3x.png */; };
+		620878101BCE3DB60018C62D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 6208780F1BCE3DB60018C62D /* test.png */; settings = {ASSET_TAGS = (); }; };
+		620878131BCE41710018C62D /* CustomOverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 620878121BCE41710018C62D /* CustomOverlayViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		620878161BCE43280018C62D /* KHCustomOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 620878151BCE43280018C62D /* KHCustomOverlay.mm */; settings = {ASSET_TAGS = (); }; };
+		6208781A1BCE45630018C62D /* KHCustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 620878191BCE45630018C62D /* KHCustomOverlayView.m */; settings = {ASSET_TAGS = (); }; };
+		6208781E1BCE48200018C62D /* PoiSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6208781C1BCE48200018C62D /* PoiSearchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6208781F1BCE48200018C62D /* PoiSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6208781D1BCE48200018C62D /* PoiSearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		6256B92F1BCB9B400085331A /* DualmapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B92E1BCB9B400085331A /* DualmapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6256B9321BCBA2020085331A /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B9311BCBA2020085331A /* MapDemoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6256B9351BCBAB2C0085331A /* MapControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256B9341BCBAB2C0085331A /* MapControlViewController.m */; settings = {ASSET_TAGS = (); }; };
+		62CF91931BCE076B0010BD2A /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CF91921BCE076B0010BD2A /* line@2x.png */; settings = {ASSET_TAGS = (); }; };
 		62EC048F1BCCC5F50088FFEC /* MapViewUIOperatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC048E1BCCC5F50088FFEC /* MapViewUIOperatViewController.m */; settings = {ASSET_TAGS = (); }; };
 		62EC04921BCCDB110088FFEC /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC04911BCCDB110088FFEC /* LocationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		62EC04951BCCECFD0088FFEC /* CoverMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC04941BCCECFD0088FFEC /* CoverMapViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -94,12 +101,23 @@
 		3D8151EA1A845BA1006B856B /* KHPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPointAnnotation.m; sourceTree = "<group>"; };
 		3D8151EC1A84681A006B856B /* add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@3x.png"; sourceTree = "<group>"; };
 		3D8151ED1A84681A006B856B /* sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sub@3x.png"; sourceTree = "<group>"; };
+		6208780F1BCE3DB60018C62D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		620878111BCE41710018C62D /* CustomOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayViewController.h; sourceTree = "<group>"; };
+		620878121BCE41710018C62D /* CustomOverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomOverlayViewController.mm; sourceTree = "<group>"; };
+		620878141BCE43280018C62D /* KHCustomOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCustomOverlay.h; sourceTree = "<group>"; };
+		620878151BCE43280018C62D /* KHCustomOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KHCustomOverlay.mm; sourceTree = "<group>"; };
+		620878181BCE45630018C62D /* KHCustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCustomOverlayView.h; sourceTree = "<group>"; };
+		620878191BCE45630018C62D /* KHCustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHCustomOverlayView.m; sourceTree = "<group>"; };
+		6208781B1BCE48200018C62D /* PoiSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiSearchViewController.h; sourceTree = "<group>"; };
+		6208781C1BCE48200018C62D /* PoiSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiSearchViewController.m; sourceTree = "<group>"; };
+		6208781D1BCE48200018C62D /* PoiSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoiSearchViewController.xib; sourceTree = "<group>"; };
 		6256B92D1BCB9B400085331A /* DualmapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DualmapViewController.h; sourceTree = "<group>"; };
 		6256B92E1BCB9B400085331A /* DualmapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DualmapViewController.m; sourceTree = "<group>"; };
 		6256B9301BCBA2020085331A /* MapDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDemoViewController.h; sourceTree = "<group>"; };
 		6256B9311BCBA2020085331A /* MapDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDemoViewController.m; sourceTree = "<group>"; };
 		6256B9331BCBAB2C0085331A /* MapControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapControlViewController.h; sourceTree = "<group>"; };
 		6256B9341BCBAB2C0085331A /* MapControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapControlViewController.m; sourceTree = "<group>"; };
+		62CF91921BCE076B0010BD2A /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		62EC048D1BCCC5F50088FFEC /* MapViewUIOperatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewUIOperatViewController.h; sourceTree = "<group>"; };
 		62EC048E1BCCC5F50088FFEC /* MapViewUIOperatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewUIOperatViewController.m; sourceTree = "<group>"; };
 		62EC04901BCCDB110088FFEC /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
@@ -245,6 +263,8 @@
 				3D8151721A845744006B856B /* medium@2x.png */,
 				3D8151731A845744006B856B /* min@2x.png */,
 				3D8151751A845744006B856B /* sub@2x.png */,
+				62CF91921BCE076B0010BD2A /* line@2x.png */,
+				6208780F1BCE3DB60018C62D /* test.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -332,6 +352,9 @@
 		3D81517F1A845744006B856B /* 8 */ = {
 			isa = PBXGroup;
 			children = (
+				620878171BCE432E0018C62D /* custom */,
+				620878111BCE41710018C62D /* CustomOverlayViewController.h */,
+				620878121BCE41710018C62D /* CustomOverlayViewController.mm */,
 			);
 			path = 8;
 			sourceTree = "<group>";
@@ -339,6 +362,9 @@
 		3D8151801A845744006B856B /* 9 */ = {
 			isa = PBXGroup;
 			children = (
+				6208781B1BCE48200018C62D /* PoiSearchViewController.h */,
+				6208781C1BCE48200018C62D /* PoiSearchViewController.m */,
+				6208781D1BCE48200018C62D /* PoiSearchViewController.xib */,
 			);
 			path = 9;
 			sourceTree = "<group>";
@@ -352,6 +378,17 @@
 				3D8151EA1A845BA1006B856B /* KHPointAnnotation.m */,
 			);
 			path = Paopao;
+			sourceTree = "<group>";
+		};
+		620878171BCE432E0018C62D /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				620878141BCE43280018C62D /* KHCustomOverlay.h */,
+				620878151BCE43280018C62D /* KHCustomOverlay.mm */,
+				620878181BCE45630018C62D /* KHCustomOverlayView.h */,
+				620878191BCE45630018C62D /* KHCustomOverlayView.m */,
+			);
+			name = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F1E12A1BC8FE9F00B59466 /* mapapi.bundle in Resources */,
+				62CF91931BCE076B0010BD2A /* line@2x.png in Resources */,
 				3D81514F1A84566F006B856B /* Main.storyboard in Resources */,
 				3D8151EE1A84681A006B856B /* add@3x.png in Resources */,
 				3D8151891A845744006B856B /* sub@2x.png in Resources */,
@@ -444,7 +482,9 @@
 				3D8151EF1A84681A006B856B /* sub@3x.png in Resources */,
 				3D8151541A84566F006B856B /* LaunchScreen.xib in Resources */,
 				3D8151D01A845774006B856B /* Default-568h@2x.png in Resources */,
+				620878101BCE3DB60018C62D /* test.png in Resources */,
 				3D8151871A845744006B856B /* min@2x.png in Resources */,
+				6208781F1BCE48200018C62D /* PoiSearchViewController.xib in Resources */,
 				3D8151511A84566F006B856B /* Images.xcassets in Resources */,
 				3D8151851A845744006B856B /* max@2x.png in Resources */,
 				3D8151831A845744006B856B /* local@2x.png in Resources */,
@@ -465,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620878131BCE41710018C62D /* CustomOverlayViewController.mm in Sources */,
 				62EC04951BCCECFD0088FFEC /* CoverMapViewController.m in Sources */,
 				62EC048F1BCCC5F50088FFEC /* MapViewUIOperatViewController.m in Sources */,
 				6256B9321BCBA2020085331A /* MapDemoViewController.m in Sources */,
@@ -473,7 +514,10 @@
 				6256B9351BCBAB2C0085331A /* MapControlViewController.m in Sources */,
 				3D81514C1A84566F006B856B /* ViewController.mm in Sources */,
 				3D8151491A84566F006B856B /* AppDelegate.m in Sources */,
+				620878161BCE43280018C62D /* KHCustomOverlay.mm in Sources */,
 				62EC04921BCCDB110088FFEC /* LocationViewController.m in Sources */,
+				6208781E1BCE48200018C62D /* PoiSearchViewController.m in Sources */,
+				6208781A1BCE45630018C62D /* KHCustomOverlayView.m in Sources */,
 				3D8151E41A845B4F006B856B /* BasicMapViewController.m in Sources */,
 				6256B92F1BCB9B400085331A /* DualmapViewController.m in Sources */,
 				3D8151461A84566F006B856B /* main.m in Sources */,
