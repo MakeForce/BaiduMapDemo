@@ -55,6 +55,26 @@
 		6265722B1BCF8CC100E548CE /* OfflineDemoMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626572271BCF8CC100E548CE /* OfflineDemoMapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6265722C1BCF8CC100E548CE /* OfflineDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626572291BCF8CC100E548CE /* OfflineDemoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6265722D1BCF8CC100E548CE /* OfflineDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6265722A1BCF8CC100E548CE /* OfflineDemoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		62744C951BD0B479002BCD09 /* HeatMapDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744C931BD0B479002BCD09 /* HeatMapDemo.mm */; settings = {ASSET_TAGS = (); }; };
+		62744C961BD0B479002BCD09 /* HeatMapDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62744C941BD0B479002BCD09 /* HeatMapDemo.xib */; settings = {ASSET_TAGS = (); }; };
+		62744C981BD0B5D1002BCD09 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 62744C971BD0B5D1002BCD09 /* locations.json */; settings = {ASSET_TAGS = (); }; };
+		62744C9D1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744C9B1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744C9E1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62744C9C1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		62744CA01BD0B75A002BCD09 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62744C9F1BD0B75A002BCD09 /* MessageUI.framework */; };
+		62744CA51BD0B7DE002BCD09 /* CloudSearchDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744CA31BD0B7DE002BCD09 /* CloudSearchDemoViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744CA61BD0B7DE002BCD09 /* CloudSearchDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62744CA41BD0B7DE002BCD09 /* CloudSearchDemoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		62744CAF1BD0B89C002BCD09 /* OpenBaiduMapDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62744CA91BD0B89C002BCD09 /* OpenBaiduMapDemo.m */; settings = {ASSET_TAGS = (); }; };
+		62744CB01BD0B89C002BCD09 /* OpenBaiduMapDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62744CAA1BD0B89C002BCD09 /* OpenBaiduMapDemo.xib */; settings = {ASSET_TAGS = (); }; };
+		62744CB11BD0B89C002BCD09 /* OpenGLDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744CAD1BD0B89C002BCD09 /* OpenGLDemoViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744CB21BD0B89C002BCD09 /* OpenGLDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62744CAE1BD0B89C002BCD09 /* OpenGLDemoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		62744CC11BD0BA70002BCD09 /* FavoritesDemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744CB51BD0BA70002BCD09 /* FavoritesDemoViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744CC21BD0BA70002BCD09 /* PromptInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62744CB81BD0BA70002BCD09 /* PromptInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		62744CC31BD0BA70002BCD09 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62744CB91BD0BA70002BCD09 /* Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		62744CC41BD0BA70002BCD09 /* RadarNearbyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744CBC1BD0BA70002BCD09 /* RadarNearbyViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744CC51BD0BA70002BCD09 /* RadarTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62744CBE1BD0BA70002BCD09 /* RadarTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		62744CC61BD0BA70002BCD09 /* RadarUploadViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62744CC01BD0BA70002BCD09 /* RadarUploadViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		62744CC91BD0C125002BCD09 /* radar_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62744CC71BD0C125002BCD09 /* radar_search@2x.png */; settings = {ASSET_TAGS = (); }; };
+		62744CCA1BD0C125002BCD09 /* radar_upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62744CC81BD0C125002BCD09 /* radar_upload@2x.png */; settings = {ASSET_TAGS = (); }; };
 		62CF91931BCE076B0010BD2A /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CF91921BCE076B0010BD2A /* line@2x.png */; settings = {ASSET_TAGS = (); }; };
 		62EC048F1BCCC5F50088FFEC /* MapViewUIOperatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC048E1BCCC5F50088FFEC /* MapViewUIOperatViewController.m */; settings = {ASSET_TAGS = (); }; };
 		62EC04921BCCDB110088FFEC /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EC04911BCCDB110088FFEC /* LocationViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -148,6 +168,36 @@
 		626572281BCF8CC100E548CE /* OfflineDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineDemoViewController.h; sourceTree = "<group>"; };
 		626572291BCF8CC100E548CE /* OfflineDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineDemoViewController.m; sourceTree = "<group>"; };
 		6265722A1BCF8CC100E548CE /* OfflineDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfflineDemoViewController.xib; sourceTree = "<group>"; };
+		62744C921BD0B479002BCD09 /* HeatMapDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapDemo.h; sourceTree = "<group>"; };
+		62744C931BD0B479002BCD09 /* HeatMapDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeatMapDemo.mm; sourceTree = "<group>"; };
+		62744C941BD0B479002BCD09 /* HeatMapDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeatMapDemo.xib; sourceTree = "<group>"; };
+		62744C971BD0B5D1002BCD09 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		62744C9A1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortUrlShareDemoViewController.h; sourceTree = "<group>"; };
+		62744C9B1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShortUrlShareDemoViewController.mm; sourceTree = "<group>"; };
+		62744C9C1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortUrlShareDemoViewController.xib; sourceTree = "<group>"; };
+		62744C9F1BD0B75A002BCD09 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		62744CA21BD0B7DE002BCD09 /* CloudSearchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudSearchDemoViewController.h; sourceTree = "<group>"; };
+		62744CA31BD0B7DE002BCD09 /* CloudSearchDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudSearchDemoViewController.mm; sourceTree = "<group>"; };
+		62744CA41BD0B7DE002BCD09 /* CloudSearchDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudSearchDemoViewController.xib; sourceTree = "<group>"; };
+		62744CA81BD0B89C002BCD09 /* OpenBaiduMapDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBaiduMapDemo.h; sourceTree = "<group>"; };
+		62744CA91BD0B89C002BCD09 /* OpenBaiduMapDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBaiduMapDemo.m; sourceTree = "<group>"; };
+		62744CAA1BD0B89C002BCD09 /* OpenBaiduMapDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenBaiduMapDemo.xib; sourceTree = "<group>"; };
+		62744CAC1BD0B89C002BCD09 /* OpenGLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLDemoViewController.h; sourceTree = "<group>"; };
+		62744CAD1BD0B89C002BCD09 /* OpenGLDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLDemoViewController.mm; sourceTree = "<group>"; };
+		62744CAE1BD0B89C002BCD09 /* OpenGLDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenGLDemoViewController.xib; sourceTree = "<group>"; };
+		62744CB41BD0BA70002BCD09 /* FavoritesDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesDemoViewController.h; sourceTree = "<group>"; };
+		62744CB51BD0BA70002BCD09 /* FavoritesDemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FavoritesDemoViewController.mm; sourceTree = "<group>"; };
+		62744CB71BD0BA70002BCD09 /* PromptInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptInfo.h; sourceTree = "<group>"; };
+		62744CB81BD0BA70002BCD09 /* PromptInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptInfo.m; sourceTree = "<group>"; };
+		62744CB91BD0BA70002BCD09 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		62744CBB1BD0BA70002BCD09 /* RadarNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarNearbyViewController.h; sourceTree = "<group>"; };
+		62744CBC1BD0BA70002BCD09 /* RadarNearbyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RadarNearbyViewController.mm; sourceTree = "<group>"; };
+		62744CBD1BD0BA70002BCD09 /* RadarTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarTabBarController.h; sourceTree = "<group>"; };
+		62744CBE1BD0BA70002BCD09 /* RadarTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarTabBarController.m; sourceTree = "<group>"; };
+		62744CBF1BD0BA70002BCD09 /* RadarUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarUploadViewController.h; sourceTree = "<group>"; };
+		62744CC01BD0BA70002BCD09 /* RadarUploadViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RadarUploadViewController.mm; sourceTree = "<group>"; };
+		62744CC71BD0C125002BCD09 /* radar_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar_search@2x.png"; sourceTree = "<group>"; };
+		62744CC81BD0C125002BCD09 /* radar_upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar_upload@2x.png"; sourceTree = "<group>"; };
 		62CF91921BCE076B0010BD2A /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		62EC048D1BCCC5F50088FFEC /* MapViewUIOperatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewUIOperatViewController.h; sourceTree = "<group>"; };
 		62EC048E1BCCC5F50088FFEC /* MapViewUIOperatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewUIOperatViewController.m; sourceTree = "<group>"; };
@@ -164,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62744CA01BD0B75A002BCD09 /* MessageUI.framework in Frameworks */,
 				3D8151DC1A8457BB006B856B /* Security.framework in Frameworks */,
 				3D8151DA1A8457B3006B856B /* CoreGraphics.framework in Frameworks */,
 				3D8151D81A8457AA006B856B /* SystemConfiguration.framework in Frameworks */,
@@ -251,6 +302,7 @@
 		3D8151691A845688006B856B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62744C9F1BD0B75A002BCD09 /* MessageUI.framework */,
 				62F1E1271BC8FE5000B59466 /* BaiduMapAPI.framework */,
 				3D8151DB1A8457BB006B856B /* Security.framework */,
 				3D8151D91A8457B3006B856B /* CoreGraphics.framework */,
@@ -275,6 +327,7 @@
 		3D81516B1A845744006B856B /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				62744C971BD0B5D1002BCD09 /* locations.json */,
 				3D8151DE1A84590B006B856B /* Config.h */,
 			);
 			path = Config;
@@ -283,6 +336,8 @@
 		3D81516C1A845744006B856B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				62744CC71BD0C125002BCD09 /* radar_search@2x.png */,
+				62744CC81BD0C125002BCD09 /* radar_upload@2x.png */,
 				62F1E1291BC8FE9F00B59466 /* mapapi.bundle */,
 				3D8151EC1A84681A006B856B /* add@3x.png */,
 				3D8151ED1A84681A006B856B /* sub@3x.png */,
@@ -315,8 +370,15 @@
 				62107AF91BCF57730007E22F /* 10 */,
 				62107AFA1BCF76010007E22F /* 11 */,
 				626572131BCF888600E548CE /* 12 */,
-				626572251BCF8CC100E548CE /* 14 */,
 				6265721F1BCF8B6600E548CE /* 13 */,
+				626572251BCF8CC100E548CE /* 14 */,
+				62744C911BD0B479002BCD09 /* 15 */,
+				62744C991BD0B65C002BCD09 /* 16 */,
+				62744CA11BD0B7DE002BCD09 /* 17 */,
+				62744CA71BD0B89C002BCD09 /* 18 */,
+				62744CAB1BD0B89C002BCD09 /* 19 */,
+				62744CB31BD0BA70002BCD09 /* 20 */,
+				62744CBA1BD0BA70002BCD09 /* 21 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +543,89 @@
 			path = 14;
 			sourceTree = "<group>";
 		};
+		62744C911BD0B479002BCD09 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				62744C921BD0B479002BCD09 /* HeatMapDemo.h */,
+				62744C931BD0B479002BCD09 /* HeatMapDemo.mm */,
+				62744C941BD0B479002BCD09 /* HeatMapDemo.xib */,
+			);
+			path = 15;
+			sourceTree = "<group>";
+		};
+		62744C991BD0B65C002BCD09 /* 16 */ = {
+			isa = PBXGroup;
+			children = (
+				62744C9A1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.h */,
+				62744C9B1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.mm */,
+				62744C9C1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.xib */,
+			);
+			path = 16;
+			sourceTree = "<group>";
+		};
+		62744CA11BD0B7DE002BCD09 /* 17 */ = {
+			isa = PBXGroup;
+			children = (
+				62744CA21BD0B7DE002BCD09 /* CloudSearchDemoViewController.h */,
+				62744CA31BD0B7DE002BCD09 /* CloudSearchDemoViewController.mm */,
+				62744CA41BD0B7DE002BCD09 /* CloudSearchDemoViewController.xib */,
+			);
+			path = 17;
+			sourceTree = "<group>";
+		};
+		62744CA71BD0B89C002BCD09 /* 18 */ = {
+			isa = PBXGroup;
+			children = (
+				62744CA81BD0B89C002BCD09 /* OpenBaiduMapDemo.h */,
+				62744CA91BD0B89C002BCD09 /* OpenBaiduMapDemo.m */,
+				62744CAA1BD0B89C002BCD09 /* OpenBaiduMapDemo.xib */,
+			);
+			path = 18;
+			sourceTree = "<group>";
+		};
+		62744CAB1BD0B89C002BCD09 /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				62744CAC1BD0B89C002BCD09 /* OpenGLDemoViewController.h */,
+				62744CAD1BD0B89C002BCD09 /* OpenGLDemoViewController.mm */,
+				62744CAE1BD0B89C002BCD09 /* OpenGLDemoViewController.xib */,
+			);
+			path = 19;
+			sourceTree = "<group>";
+		};
+		62744CB31BD0BA70002BCD09 /* 20 */ = {
+			isa = PBXGroup;
+			children = (
+				62744CB41BD0BA70002BCD09 /* FavoritesDemoViewController.h */,
+				62744CB51BD0BA70002BCD09 /* FavoritesDemoViewController.mm */,
+				62744CB61BD0BA70002BCD09 /* PromptInfo */,
+				62744CB91BD0BA70002BCD09 /* Storyboard.storyboard */,
+			);
+			path = 20;
+			sourceTree = "<group>";
+		};
+		62744CB61BD0BA70002BCD09 /* PromptInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62744CB71BD0BA70002BCD09 /* PromptInfo.h */,
+				62744CB81BD0BA70002BCD09 /* PromptInfo.m */,
+			);
+			path = PromptInfo;
+			sourceTree = "<group>";
+		};
+		62744CBA1BD0BA70002BCD09 /* 21 */ = {
+			isa = PBXGroup;
+			children = (
+				62744CBB1BD0BA70002BCD09 /* RadarNearbyViewController.h */,
+				62744CBC1BD0BA70002BCD09 /* RadarNearbyViewController.mm */,
+				62744CBD1BD0BA70002BCD09 /* RadarTabBarController.h */,
+				62744CBE1BD0BA70002BCD09 /* RadarTabBarController.m */,
+				62744CBF1BD0BA70002BCD09 /* RadarUploadViewController.h */,
+				62744CC01BD0BA70002BCD09 /* RadarUploadViewController.mm */,
+			);
+			path = 21;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,16 +706,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62744CC31BD0BA70002BCD09 /* Storyboard.storyboard in Resources */,
 				62F1E12A1BC8FE9F00B59466 /* mapapi.bundle in Resources */,
+				62744CA61BD0B7DE002BCD09 /* CloudSearchDemoViewController.xib in Resources */,
+				62744CB21BD0B89C002BCD09 /* OpenGLDemoViewController.xib in Resources */,
 				62CF91931BCE076B0010BD2A /* line@2x.png in Resources */,
+				62744CC91BD0C125002BCD09 /* radar_search@2x.png in Resources */,
 				3D81514F1A84566F006B856B /* Main.storyboard in Resources */,
+				62744CCA1BD0C125002BCD09 /* radar_upload@2x.png in Resources */,
 				3D8151EE1A84681A006B856B /* add@3x.png in Resources */,
 				3D8151891A845744006B856B /* sub@2x.png in Resources */,
 				3D8151821A845744006B856B /* add@2x.png in Resources */,
+				62744C9E1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.xib in Resources */,
 				3D8151841A845744006B856B /* local@3x.png in Resources */,
 				3D8151861A845744006B856B /* medium@2x.png in Resources */,
 				3D8151EF1A84681A006B856B /* sub@3x.png in Resources */,
 				3D8151541A84566F006B856B /* LaunchScreen.xib in Resources */,
+				62744C981BD0B5D1002BCD09 /* locations.json in Resources */,
 				3D8151D01A845774006B856B /* Default-568h@2x.png in Resources */,
 				620878101BCE3DB60018C62D /* test.png in Resources */,
 				62107B011BCF76420007E22F /* RouteSearchViewController.xib in Resources */,
@@ -581,6 +733,8 @@
 				6265722D1BCF8CC100E548CE /* OfflineDemoViewController.xib in Resources */,
 				3D8151851A845744006B856B /* max@2x.png in Resources */,
 				626572181BCF888600E548CE /* WayPointRouteSearchDemoViewController.xib in Resources */,
+				62744CB01BD0B89C002BCD09 /* OpenBaiduMapDemo.xib in Resources */,
+				62744C961BD0B479002BCD09 /* HeatMapDemo.xib in Resources */,
 				626572241BCF8B6600E548CE /* BusLineSearchViewController.xib in Resources */,
 				3D8151831A845744006B856B /* local@2x.png in Resources */,
 			);
@@ -601,14 +755,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				620878131BCE41710018C62D /* CustomOverlayViewController.mm in Sources */,
+				62744CC11BD0BA70002BCD09 /* FavoritesDemoViewController.mm in Sources */,
 				62EC04951BCCECFD0088FFEC /* CoverMapViewController.m in Sources */,
+				62744C951BD0B479002BCD09 /* HeatMapDemo.mm in Sources */,
 				62EC048F1BCCC5F50088FFEC /* MapViewUIOperatViewController.m in Sources */,
 				6265722B1BCF8CC100E548CE /* OfflineDemoMapViewController.m in Sources */,
 				6256B9321BCBA2020085331A /* MapDemoViewController.m in Sources */,
+				62744C9D1BD0B65C002BCD09 /* ShortUrlShareDemoViewController.mm in Sources */,
+				62744CC61BD0BA70002BCD09 /* RadarUploadViewController.mm in Sources */,
 				626572171BCF888600E548CE /* WayPointRouteSearchDemoViewController.mm in Sources */,
+				62744CB11BD0B89C002BCD09 /* OpenGLDemoViewController.mm in Sources */,
 				6265721E1BCF8AF500E548CE /* UIImage+Rotate.m in Sources */,
 				3D8151E11A8459D7006B856B /* MainTableViewController.m in Sources */,
 				3D8151E81A845B7F006B856B /* KHPaoPaoView.m in Sources */,
+				62744CAF1BD0B89C002BCD09 /* OpenBaiduMapDemo.m in Sources */,
+				62744CC41BD0BA70002BCD09 /* RadarNearbyViewController.mm in Sources */,
 				6256B9351BCBAB2C0085331A /* MapControlViewController.m in Sources */,
 				3D81514C1A84566F006B856B /* ViewController.mm in Sources */,
 				3D8151491A84566F006B856B /* AppDelegate.m in Sources */,
@@ -616,10 +777,13 @@
 				620878161BCE43280018C62D /* KHCustomOverlay.mm in Sources */,
 				62EC04921BCCDB110088FFEC /* LocationViewController.m in Sources */,
 				6208781E1BCE48200018C62D /* PoiSearchViewController.m in Sources */,
+				62744CA51BD0B7DE002BCD09 /* CloudSearchDemoViewController.mm in Sources */,
 				62107B001BCF76420007E22F /* RouteSearchViewController.mm in Sources */,
 				6208781A1BCE45630018C62D /* KHCustomOverlayView.m in Sources */,
 				3D8151E41A845B4F006B856B /* BasicMapViewController.m in Sources */,
+				62744CC51BD0BA70002BCD09 /* RadarTabBarController.m in Sources */,
 				6256B92F1BCB9B400085331A /* DualmapViewController.m in Sources */,
+				62744CC21BD0BA70002BCD09 /* PromptInfo.m in Sources */,
 				3D8151461A84566F006B856B /* main.m in Sources */,
 				6265722C1BCF8CC100E548CE /* OfflineDemoViewController.m in Sources */,
 				3D8151EB1A845BA1006B856B /* KHPointAnnotation.m in Sources */,
@@ -759,6 +923,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resource/Lib/BaiduMapSDK",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -781,6 +946,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resource/Lib/BaiduMapSDK",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

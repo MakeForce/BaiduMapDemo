@@ -25,8 +25,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController",@"UI操作 MapViewUIOperatViewController",@"定位 LocationViewController",@"覆盖物 CoverMapViewController" ,@"自定义覆盖 CustomOverlayViewController",@"POI搜索 PoiSearchViewController",@"地理编码 GeocodeViewController",@"路径规划 RouteSearchViewController",@"公交路线查询 BusLineSearchViewController",@"离线地图 OfflineDemoViewController"];
-    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control",@"uiControl",@"getLocation",@"mapCover",@"customOverlay",@"PoiSearchViewController",@"GeocodeViewController",@"RouteSearchViewController",@"BusLineSearchViewController",@"OfflineDemoViewController"];
+    nameList = @[@"地图初始化 BasicMapViewController",@"多地图展示 DualmapViewController",@"图层展示 MapDemoViewController", @"地图操作 MapControlViewController",@"UI操作 MapViewUIOperatViewController",@"定位 LocationViewController",@"覆盖物 CoverMapViewController" ,@"自定义覆盖 CustomOverlayViewController",@"POI搜索 PoiSearchViewController",@"地理编码 GeocodeViewController",@"路径规划 RouteSearchViewController",@"公交路线查询 BusLineSearchViewController",@"离线地图 OfflineDemoViewController",@"热力地图 HeatMapDemo",@"短传分享 ShortUrlShareDemoViewController",@"云检索 CloudSearchDemoViewController",@"调用百度地图客户端OpenBaiduMapDemo",@"OpenGL绘制 OpenGLDemoViewController",@"收藏夹 FavoritesDemoViewController",@"周边雷达 RadarTabBarController"];
+    controllerList = @[@"BaseMap",@"MultiMap",@"useMap1",@"control",@"uiControl",@"getLocation",@"mapCover",@"customOverlay",@"PoiSearchViewController",@"GeocodeViewController",@"RouteSearchViewController",@"BusLineSearchViewController",@"OfflineDemoViewController",@"HeatMapDemo",@"ShortUrlShareDemoViewController",@"CloudSearchDemoViewController",@"OpenBaiduMapDemo",@"OpenGLDemoViewController",@"FavoritesDemoViewController",@"RadarTabBarController"];
     [line setFrame:CGRectMake(0, 0, __SCREEN_SIZE.width, 0.5)];
     if(nameList.count > 0)
     {
@@ -67,11 +67,20 @@
     if (indexPath.row<8) {
         [self performSegueWithIdentifier:controllerList[indexPath.row] sender:nil];
     }
-    else{
+    else if(indexPath.row < 18){
         Class className = NSClassFromString(controllerList[indexPath.row]);
         id controller = [[className alloc] init];
         [controller setTitle:nameList[indexPath.row]];
         [self.navigationController pushViewController:controller animated:YES];
+    }else{
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        NSString *identifier = (indexPath.row == 18)?@"FavoritesDemoViewController":@"RadarTabBarController";
+        UIViewController *viewController = [storyBoard instantiateViewControllerWithIdentifier:identifier];
+        [viewController setTitle:nameList[indexPath.row]];
+        UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
+        customLeftBarButtonItem.title = @"返回";
+        self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
+        [self.navigationController pushViewController:viewController animated:YES];
     }
 }
 /*
