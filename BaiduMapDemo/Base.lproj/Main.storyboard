@@ -296,6 +296,7 @@
                         <viewControllerLayoutGuide type="bottom" id="87h-kF-15O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7yL-AM-8sq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G70-bO-H5D" customClass="BMKMapView">
@@ -317,10 +318,10 @@
                                 <exclude reference="G70-bO-H5D"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="CYB-cZ-KQA"/>
                                 <exclude reference="CXy-rJ-2Y8"/>
                                 <exclude reference="vUL-Mv-mgx"/>
                                 <exclude reference="vng-1H-wCJ"/>
-                                <exclude reference="CYB-cZ-KQA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -328,10 +329,10 @@
                                 <include reference="G70-bO-H5D"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CYB-cZ-KQA"/>
                                 <include reference="CXy-rJ-2Y8"/>
                                 <include reference="vUL-Mv-mgx"/>
                                 <include reference="vng-1H-wCJ"/>
-                                <include reference="CYB-cZ-KQA"/>
                             </mask>
                         </variation>
                     </view>

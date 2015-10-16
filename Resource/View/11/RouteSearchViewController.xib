@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RouteSearchViewController">
+            <connections>
+                <outlet property="endAddrText" destination="RTx-S8-cDt" id="8qu-ru-nOb"/>
+                <outlet property="endCityText" destination="8Md-8l-9FE" id="UTU-x2-wFk"/>
+                <outlet property="mapView" destination="yy8-jb-5g7" id="3qI-s4-juX"/>
+                <outlet property="startAddrText" destination="OhM-kf-29M" id="qA8-X7-40F"/>
+                <outlet property="startCityText" destination="kMr-bI-LFY" id="D0u-bA-i5l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起点:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-sB-a6a">
+                    <rect key="frame" x="20" y="10" width="33" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="终点:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HW-qV-uSt">
+                    <rect key="frame" x="20" y="42" width="33" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="北京" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMr-bI-LFY">
+                    <rect key="frame" x="63" y="4" width="49" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEnd" id="jH2-Ty-pf9"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="天安门" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OhM-kf-29M">
+                    <rect key="frame" x="122" y="4" width="63" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEnd" id="Edr-nI-jdf"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="北京" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Md-8l-9FE">
+                    <rect key="frame" x="63" y="36" width="49" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEnd" id="a4R-Vw-nVb"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="人民英雄纪念碑" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-S8-cDt">
+                    <rect key="frame" x="122" y="36" width="119" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEnd" id="AEx-wM-UT0"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtt-db-Mgl">
+                    <rect key="frame" x="52" y="76" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="公交"/>
+                    <connections>
+                        <action selector="onClickBusSearch" destination="-1" eventType="touchUpInside" id="Cmq-cn-7no"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK5-HL-1HW">
+                    <rect key="frame" x="122" y="76" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="乘驾"/>
+                    <connections>
+                        <action selector="onClickDriveSearch" destination="-1" eventType="touchUpInside" id="3RJ-Cj-aOK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-5C-d8L">
+                    <rect key="frame" x="183" y="76" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="步行"/>
+                    <connections>
+                        <action selector="onClickWalkSearch" destination="-1" eventType="touchUpInside" id="xG1-IR-QIn"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy8-jb-5g7" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="126" width="600" height="410"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OYO-5C-d8L" firstAttribute="top" secondItem="RTx-S8-cDt" secondAttribute="bottom" constant="10" id="41h-8n-YlV"/>
+                <constraint firstItem="kMr-bI-LFY" firstAttribute="centerY" secondItem="5vy-sB-a6a" secondAttribute="centerY" id="5kw-vf-JOl"/>
+                <constraint firstItem="8HW-qV-uSt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="64M-fC-iYx"/>
+                <constraint firstItem="8Md-8l-9FE" firstAttribute="centerY" secondItem="8HW-qV-uSt" secondAttribute="centerY" id="70t-an-dkV"/>
+                <constraint firstItem="OYO-5C-d8L" firstAttribute="leading" secondItem="dK5-HL-1HW" secondAttribute="trailing" constant="31" id="73u-UN-s5H"/>
+                <constraint firstItem="Dtt-db-Mgl" firstAttribute="top" secondItem="8Md-8l-9FE" secondAttribute="bottom" constant="10" id="ByX-1U-Eip"/>
+                <constraint firstItem="5vy-sB-a6a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="GXk-KG-ypn"/>
+                <constraint firstItem="dK5-HL-1HW" firstAttribute="leading" secondItem="RTx-S8-cDt" secondAttribute="leading" id="Geo-fo-BAv"/>
+                <constraint firstItem="dK5-HL-1HW" firstAttribute="leading" secondItem="Dtt-db-Mgl" secondAttribute="trailing" constant="40" id="NDb-Xy-pmM"/>
+                <constraint firstItem="OhM-kf-29M" firstAttribute="centerY" secondItem="kMr-bI-LFY" secondAttribute="centerY" id="PX5-99-Jz6"/>
+                <constraint firstItem="RTx-S8-cDt" firstAttribute="centerY" secondItem="8Md-8l-9FE" secondAttribute="centerY" id="Pnd-zO-Gcs"/>
+                <constraint firstAttribute="trailing" secondItem="yy8-jb-5g7" secondAttribute="trailing" id="QR7-zX-dhs"/>
+                <constraint firstItem="8Md-8l-9FE" firstAttribute="leading" secondItem="8HW-qV-uSt" secondAttribute="trailing" constant="10" id="YsG-5r-ijw"/>
+                <constraint firstItem="yy8-jb-5g7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eGV-PN-nV6"/>
+                <constraint firstItem="RTx-S8-cDt" firstAttribute="leading" secondItem="8Md-8l-9FE" secondAttribute="trailing" constant="10" id="goU-lL-yuv"/>
+                <constraint firstItem="OhM-kf-29M" firstAttribute="leading" secondItem="kMr-bI-LFY" secondAttribute="trailing" constant="10" id="gry-T3-VBV"/>
+                <constraint firstItem="dK5-HL-1HW" firstAttribute="top" secondItem="RTx-S8-cDt" secondAttribute="bottom" constant="10" id="k4J-3f-jGy"/>
+                <constraint firstItem="yy8-jb-5g7" firstAttribute="top" secondItem="OYO-5C-d8L" secondAttribute="bottom" constant="20" id="oBB-HD-XA6"/>
+                <constraint firstAttribute="bottom" secondItem="yy8-jb-5g7" secondAttribute="bottom" id="ogD-qC-149"/>
+                <constraint firstItem="8HW-qV-uSt" firstAttribute="top" secondItem="5vy-sB-a6a" secondAttribute="bottom" constant="15" id="rny-fx-SEs"/>
+                <constraint firstItem="kMr-bI-LFY" firstAttribute="leading" secondItem="5vy-sB-a6a" secondAttribute="trailing" constant="10" id="v3V-iu-eI3"/>
+                <constraint firstItem="5vy-sB-a6a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="zsc-wr-D3I"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+</document>

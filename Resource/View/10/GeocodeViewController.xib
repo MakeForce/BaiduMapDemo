@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeocodeViewController">
+            <connections>
+                <outlet property="addrText" destination="Hph-Bh-emd" id="Rjz-FU-up2"/>
+                <outlet property="cityText" destination="QGq-gh-iHd" id="zfo-XD-9Hd"/>
+                <outlet property="coordinateXText" destination="9hA-Ag-OEO" id="nhj-MD-PKO"/>
+                <outlet property="coordinateYText" destination="670-UY-nv2" id="l5M-9M-Gc4"/>
+                <outlet property="mapView" destination="Vmg-17-J9c" id="L3o-oN-aNb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmg-17-J9c" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="159" width="600" height="441"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="雁塔区丈八沟街道东方向" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-Bh-emd">
+                    <rect key="frame" x="76" y="64" width="175" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEndOnExit" id="YaK-N5-jap"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hH1-qn-YaA">
+                    <rect key="frame" x="259" y="64" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Geo"/>
+                    <connections>
+                        <action selector="onClickGeocode:" destination="-1" eventType="touchUpInside" id="WmZ-PU-NLt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="34.2035380000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="670-UY-nv2">
+                    <rect key="frame" x="8" y="109" width="128" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEndOnExit" id="npF-Si-DJD"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="108.8910550000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-Ag-OEO">
+                    <rect key="frame" x="146" y="109" width="133" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEndOnExit" id="Ilc-zI-5Xp"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OR-PZ-UcK">
+                    <rect key="frame" x="294" y="109" width="83" height="30"/>
+                    <animations/>
+                    <state key="normal" title="ReverseGeo"/>
+                    <connections>
+                        <action selector="onClickReverseGeocode:" destination="-1" eventType="touchUpInside" id="Zyn-y2-V5b"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="西安市" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QGq-gh-iHd">
+                    <rect key="frame" x="8" y="64" width="63" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="textFiledReturnEditing:" destination="-1" eventType="editingDidEndOnExit" id="Ytg-59-2PX"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hH1-qn-YaA" firstAttribute="centerY" secondItem="Hph-Bh-emd" secondAttribute="centerY" id="19x-sx-Cfg"/>
+                <constraint firstItem="Hph-Bh-emd" firstAttribute="leading" secondItem="QGq-gh-iHd" secondAttribute="trailing" constant="5" id="DW3-nS-lM9"/>
+                <constraint firstItem="8OR-PZ-UcK" firstAttribute="centerY" secondItem="9hA-Ag-OEO" secondAttribute="centerY" id="Dot-Wq-bo8"/>
+                <constraint firstItem="hH1-qn-YaA" firstAttribute="leading" secondItem="Hph-Bh-emd" secondAttribute="trailing" constant="8" id="IPQ-Ds-NR6"/>
+                <constraint firstItem="8OR-PZ-UcK" firstAttribute="leading" secondItem="9hA-Ag-OEO" secondAttribute="trailing" constant="15" id="Mqg-BD-dVI"/>
+                <constraint firstItem="Vmg-17-J9c" firstAttribute="top" secondItem="8OR-PZ-UcK" secondAttribute="bottom" constant="20" id="RPw-pQ-cE7"/>
+                <constraint firstItem="QGq-gh-iHd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="RzZ-0H-4PV"/>
+                <constraint firstItem="670-UY-nv2" firstAttribute="leading" secondItem="QGq-gh-iHd" secondAttribute="leading" id="UJT-Si-JP4"/>
+                <constraint firstItem="9hA-Ag-OEO" firstAttribute="leading" secondItem="670-UY-nv2" secondAttribute="trailing" constant="10" id="gKG-QL-3or"/>
+                <constraint firstItem="9hA-Ag-OEO" firstAttribute="centerY" secondItem="670-UY-nv2" secondAttribute="centerY" id="i2P-Ez-2bd"/>
+                <constraint firstAttribute="bottom" secondItem="Vmg-17-J9c" secondAttribute="bottom" id="nDN-c4-geE"/>
+                <constraint firstItem="Hph-Bh-emd" firstAttribute="centerY" secondItem="QGq-gh-iHd" secondAttribute="centerY" id="ojG-UN-Bpl"/>
+                <constraint firstItem="QGq-gh-iHd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="rae-8M-KSD"/>
+                <constraint firstAttribute="trailing" secondItem="Vmg-17-J9c" secondAttribute="trailing" id="tFL-rf-wDe"/>
+                <constraint firstItem="Vmg-17-J9c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tdm-lY-Zat"/>
+                <constraint firstItem="670-UY-nv2" firstAttribute="top" secondItem="Hph-Bh-emd" secondAttribute="bottom" constant="15" id="wMt-Ch-gvm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
